@@ -1,0 +1,589 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>购物车</title>
+<link rel="stylesheet" type="text/css" href="style/system.css">
+<link rel="stylesheet" type="text/css" href="style/list.css">
+<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+</head>
+
+<body>
+<div class="header">
+	<div class="new_body">
+		<div class="header_info clearfix">
+			<div class="header_info_left">
+				<div class="header_welcome m_dh">
+                	<div class="hd_nav">网站导航<i class="head_tip"></i></div>
+                	<div class="hd_cont">
+                    	<ul>
+                        	<li><a href="#" target="_blank">我的订单</a></li>
+                            <li><a href="#" target="_blank">送货地址</a></li>
+                            <li><a href="#" target="_blank">邮箱地址</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header_message  m_dh">
+                	<div class="hd_nav">消息<i class="head_tip"></i></div>
+                	<div class="hd_cont">
+                    	<ul>
+                        	<li><a href="#" target="_blank">我的订单</a></li>
+                            <li><a href="#" target="_blank">送货地址</a></li>
+                            <li><a href="#" target="_blank">邮箱地址</a></li>
+                        </ul>
+                    </div>
+                </div>
+				
+			</div>
+			<div class="header_info_right">
+				<a href="">登陆</a>
+				<a href="">注册</a>
+				<a href="">我的订单 </a>
+				<a href="" style="padding:0px 30px 0px 15px;">购物车</a>
+               	<div class="header_read m_dh">
+                	<div class="hd_nav">代理商必读<i class="head_tip"></i></div>
+                	<div class="hd_cont">
+                    	<ul>
+                        	<li><a href="#" target="_blank">我的订单</a></li>
+                            <li><a href="#" target="_blank">送货地址</a></li>
+                            <li><a href="#" target="_blank">邮箱地址</a></li>
+                        </ul>
+                    </div>           
+                </div>
+                <div class="header_help m_dh">
+                	<div class="hd_nav">客户服务<i class="head_tip"></i></div>
+                	<div class="hd_cont">
+                    	<ul>
+                        	<li><a href="#" target="_blank">我的订单</a></li>
+                            <li><a href="#" target="_blank">送货地址</a></li>
+                            <li><a href="#" target="_blank">邮箱地址</a></li>
+                        </ul>
+                    </div>     
+                </div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<div class="header_logo_search new_body clearfix" >
+	<h1 class="header_logo"><a href="" title="这里是LOGO标志"><img src="images/new_logo.png" width="147" height="57"></a></h1>
+	<div class="header_search">
+		<form method="get" action="">
+			<input type="text" class="search" placeholder="呢子大衣">
+			<input type="submit" class="header_search_submit" value=" ">
+		</form>
+		<div class="search_heat">
+			<a href="" style="padding-left:0;">羽绒服</a>|
+			<a href="">最新棉衣</a>|
+			<a href="">欧美牛仔</a>|
+			<a href="">打底衫</a>|
+			<a href="">皮棉</a>|
+			<a href="">长裤</a>|
+			<a href="" style="padding-right:0;">短裤</a>
+		</div>
+	</div>
+	<div class="header_user_info">
+		<a href="#" target="_blank"><img src="images/head_wx_logo.jpg" width="178" height="91" alt=""></a>	
+	</div>
+</div>
+<div class="header_nav new_body clearfix">
+	<div class="nav_allshop clearfix">
+    	<a class="allshop_show_btn">       
+             <i class="icon_allshop"></i>
+            <span>部商品分类</span>   
+        </a>                    
+        <ul class="allshop_list" style="display:none;">         
+        	<li>
+            	<div class="all_shop_intro">
+                	<h3>上衣</h3><a href="#" target="_blank">外套</a><a href="#" target="_blank">打底衫</a><a href="#" target="_blank">雪纺衫</a><a href="#" target="_blank">衬衫</a><a href="#" target="_blank">T恤</a><a href="#" target="_blank">棉衣</a><a href="#" target="_blank">呢大衣</a><a href="#" target="_blank">皮衣</a><a href="#" target="_blank">皮棉</a><a href="#" target="_blank">棉服</a><a href="#" target="_blank">羽绒服</a><a href="#" target="_blank">牛仔绵服</a>
+                
+                </div>
+            </li>
+            
+         	<li>
+            	<div class="all_shop_intro">
+                	<h3>下装</h3><a href="#" target="_blank">外套</a><a href="#" target="_blank">打底衫</a><a href="#" target="_blank">雪纺衫</a><a href="#" target="_blank">衬衫</a><a href="#" target="_blank">T恤</a><a href="#" target="_blank">棉衣</a><a href="#" target="_blank">呢大衣</a><a href="#" target="_blank">皮衣</a>
+                
+                </div>
+            </li>
+            <li>
+            	<div class="all_shop_intro">
+                	<h3>套装</h3><a href="#" target="_blank">外套</a><a href="#" target="_blank">打底衫</a><a href="#" target="_blank">雪纺衫</a><a href="#" target="_blank">衬衫</a><a href="#" target="_blank">T恤</a><a href="#" target="_blank">棉衣</a><a href="#" target="_blank">呢大衣</a><a href="#" target="_blank">皮衣</a><a href="#" target="_blank">皮棉</a><a href="#" target="_blank">棉服</a><a href="#" target="_blank">羽绒服</a><a href="#" target="_blank">牛仔绵服</a>
+                
+                </div>
+            </li>
+            <li>
+            	<div class="all_shop_intro" style="border:none;">
+                	<h3>欧美牛仔</h3><a href="#" target="_blank">外套</a><a href="#" target="_blank">打底衫</a><a href="#" target="_blank">雪纺衫</a><a href="#" target="_blank">衬衫</a><a href="#" target="_blank">T恤</a><a href="#" target="_blank">棉衣</a><a href="#" target="_blank">呢大衣</a><a href="#" target="_blank">皮衣</a><a href="#" target="_blank">皮棉</a><a href="#" target="_blank">棉服</a><a href="#" target="_blank">羽绒服</a><a href="#" target="_blank">牛仔绵服</a>
+                
+                </div>
+            </li>
+        </ul>
+    </div>
+	<ul class="nav_menu">
+    	<li><a href="#" target="_blank">牛涨首页</a></li>
+        <li><a href="#" target="_blank">女装牛款</a></li>
+        <li><a href="#" target="_blank">天猫特供</a></li>
+        <li><a href="#" target="_blank">淘宝活动</a></li>
+        <li><a href="#" target="_blank">淘宝学堂</a></li>
+        <li><a href="#" target="_blank">尾货专区</a></li>
+        <li><a href="#" target="_blank">牛刷刷</a></li>
+        <li><a href="#" target="_blank">下架区</a></li>
+     </ul>
+</div>
+<!--ca_main_warp-->
+<div class="ca_main_warp new_body clearfix">
+	<!--shop_step_select-->
+	<div class="shop_step_select clearfix">
+    	<span class="jiantou1">我的购物车</span>
+        <span class="jiantou2"></span>
+        <span class="jiantou3"></span>
+        <span class="jiantou4">确认订单信息</span>
+        <span class="jiantou5"></span>
+        <span class="jiantou3"></span>
+        <span class="jiantou4">提交订单</span>
+        <span class="jiantou5"></span>
+        <span class="jiantou3"></span>
+        <span class="jiantou4">付款成功</span>
+    </div>
+	<!--ca_shop_list-->
+    <div class="ca_shop_list new_body clearfix">
+    	<div class="ca_title">
+        	购物车：<i>1</i>
+        </div>
+      	<!-- ca_cart-->
+        <div class="ca_cart new_body clearfix">
+        	<!--cart_thead-->
+        	<div class="cart_thead">
+			<div class="column t_checkbox">
+				<div class="cart_checkbox">
+					<input type="checkbox" name="checkAll" style="display:inline-block; vertical-align:middle;margin: 0 15px 0 0;" >全选
+				</div>
+			</div>
+			<div class="column t_goods">商品</div>
+			<div class="column t_props">规格</div>
+			<div class="column t_quantity">数量</div>
+			<div class="column t_sum">小计(元)</div>
+			<div class="column t_action">操作</div>
+            </div>
+            <!--cart_list-->
+            <div class="cart_list clearfix">
+            	<div class="cart_checkbox">
+					<input type="checkbox" name="checkbox" style="display:inline-block; vertical-align:middle;margin: 0 15px 0 0;" >
+                    <p class="shop_name">***************店铺</p>	
+                    <a href="#" target="_blank"><i class="swt"></i>在线咨询</a>			
+                </div>
+                <div class="cart_intro">
+                	<div class="cart_img">
+                    	<a href="#" target="_blank"><img src="images/data/cart/cart_sale_img.jpg" width="83" height="83" alt="" /></a>
+                        <div class="cart_dec">
+                         	<p>2015年秋冬新款韩版针织宽松套头中长款针织衫打底连衣裙</p>
+                        	<div class="cart_icon">
+                            	<i class="cart_zheng"></i><i class="cart_ze"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_size">
+                    	<i class="cart_size_icon"></i>
+                        <div class="cart_size_change">
+                        	<p>颜色：灰色</p>
+                            <p>尺码：均码</p>
+                        </div>
+                    </div>
+                    <div class="cart_sum">
+                    	<span class="jian"></span>
+                        <input type="text" class="cart_math" value="1"/>
+                        <span class="jia"></span>
+                    </div>
+                    <div class="cart_total">
+                    	<p>￥55.00</p>
+                        <del>￥168.00(3.3折)</del>
+                    </div>
+                    <div class="cart_del">
+                    	<i class="delete"></i>
+                    </div>
+                </div>
+            </div>
+              <!--cart_list-->
+            <div class="cart_list clearfix">
+            	<div class="cart_checkbox">
+					<input type="checkbox" name='checkbox' style="display:inline-block; vertical-align:middle;margin: 0 15px 0 0;" >
+                    <p class="shop_name">***************店铺</p>	
+                    <a href="#" target="_blank"><i class="swt"></i>在线咨询</a>			
+                </div>
+                <div class="cart_intro">
+                	<div class="cart_img">
+                    	<a href="#" target="_blank"><img src="images/data/cart/cart_sale_img.jpg" width="83" height="83" alt="" /></a>
+                        <div class="cart_dec">
+                         	<p>2015年秋冬新款韩版针织宽松套头中长款针织衫打底连衣裙</p>
+                        	<div class="cart_icon">
+                            	<i class="cart_zheng"></i><i class="cart_ze"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_size">
+                    	<i class="cart_size_icon"></i>
+                        <div class="cart_size_change">
+                        	<p>颜色：灰色</p>
+                            <p>尺码：均码</p>
+                        </div>
+                    </div>
+                    <div class="cart_sum">
+                    	<span class="jian"></span>
+                        <input type="text" class="cart_math" value="1"/>
+                        <span class="jia"></span>
+                    </div>
+                    <div class="cart_total">
+                    	<p>￥55.00</p>
+                        <del>￥168.00(3.3折)</del>
+                    </div>
+                    <div class="cart_del">
+                    	<i class="delete"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ca_all lefNavShow">
+        	<div class="cart_checkbox">
+					<input type="checkbox" name="checkAll" style="display:inline-block; vertical-align:middle;margin: 0 15px 0 0;" >全选
+			</div>
+            <div class="cart_cash">
+            	<span>&nbsp;共&nbsp;<p class="num">1</p>&nbsp;件商品 商品应付总额：&nbsp;<p class="money">¥ 110.00</p>      
+                </span>
+                <div class="cart_submit">
+                	<input type="submit" value="去结算" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ca_need">
+    	<div class="ca_need_title">
+        	<p>您可能还需要</p>
+        </div>
+        <ul>
+        	<li>
+            	<a href="#" target="_blank"><img src="images/cart_list.jpg" width="220" height="220" alt="" /></a>
+                <p><a href="#" target="_blank">【Z1522】主推百搭简约版牛仔外套</a></p>
+                <dl class="ca_list_price">
+                	<dt>
+                    	<em>￥458.00</em>	
+                        <del>￥540.00</del>
+                    </dt>
+                    <dd>
+                        <a href="#" target="_blank"><i class="like"></i></a>
+                        <a href="#" target="_blank"><i class="car"></i></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+            	<a href="#" target="_blank"><img src="images/cart_list.jpg" width="220" height="220" alt="" /></a>
+                <p><a href="#" target="_blank">【Z1522】主推百搭简约版牛仔外套</a></p>
+                <dl class="ca_list_price">
+                	<dt>
+                    	<em>￥458.00</em>	
+                        <del>￥540.00</del>
+                    </dt>
+                    <dd>
+                        <a href="#" target="_blank"><i class="like"></i></a>
+                        <a href="#" target="_blank"><i class="car"></i></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+            	<a href="#" target="_blank"><img src="images/cart_list.jpg" width="220" height="220" alt="" /></a>
+                <p><a href="#" target="_blank">【Z1522】主推百搭简约版牛仔外套</a></p>
+                <dl class="ca_list_price">
+                	<dt>
+                    	<em>￥458.00</em>	
+                        <del>￥540.00</del>
+                    </dt>
+                    <dd>
+                        <a href="#" target="_blank"><i class="like"></i></a>
+                        <a href="#" target="_blank"><i class="car"></i></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+            	<a href="#" target="_blank"><img src="images/cart_list.jpg" width="220" height="220" alt="" /></a>
+                <p><a href="#" target="_blank">【Z1522】主推百搭简约版牛仔外套</a></p>
+                <dl class="ca_list_price">
+                	<dt>
+                    	<em>￥458.00</em>	
+                        <del>￥540.00</del>
+                    </dt>
+                    <dd>
+                        <a href="#" target="_blank"><i class="like"></i></a>
+                        <a href="#" target="_blank"><i class="car"></i></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+            	<a href="#" target="_blank"><img src="images/cart_list.jpg" width="220" height="220" alt="" /></a>
+                <p><a href="#" target="_blank">【Z1522】主推百搭简约版牛仔外套</a></p>
+                <dl class="ca_list_price">
+                	<dt>
+                    	<em>￥458.00</em>	
+                        <del>￥540.00</del>
+                    </dt>
+                    <dd>
+                        <a href="#" target="_blank"><i class="like"></i></a>
+                        <a href="#" target="_blank"><i class="car"></i></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+            	<a href="#" target="_blank"><img src="images/cart_list.jpg" width="220" height="220" alt="" /></a>
+                <p><a href="#" target="_blank">【Z1522】主推百搭简约版牛仔外套</a></p>
+                <dl class="ca_list_price">
+                	<dt>
+                    	<em>￥458.00</em>	
+                        <del>￥540.00</del>
+                    </dt>
+                    <dd>
+                        <a href="#" target="_blank"><i class="like"></i></a>
+                        <a href="#" target="_blank"><i class="car"></i></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+            	<a href="#" target="_blank"><img src="images/cart_list.jpg" width="220" height="220" alt="" /></a>
+                <p><a href="#" target="_blank">【Z1522】主推百搭简约版牛仔外套</a></p>
+                <dl class="ca_list_price">
+                	<dt>
+                    	<em>￥458.00</em>	
+                        <del>￥540.00</del>
+                    </dt>
+                    <dd>
+                        <a href="#" target="_blank"><i class="like"></i></a>
+                        <a href="#" target="_blank"><i class="car"></i></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+            	<a href="#" target="_blank"><img src="images/cart_list.jpg" width="220" height="220" alt="" /></a>
+                <p><a href="#" target="_blank">【Z1522】主推百搭简约版牛仔外套</a></p>
+                <dl class="ca_list_price">
+                	<dt>
+                    	<em>￥458.00</em>	
+                        <del>￥540.00</del>
+                    </dt>
+                    <dd>
+                        <a href="#" target="_blank"><i class="like"></i></a>
+                        <a href="#" target="_blank"><i class="car"></i></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+            	<a href="#" target="_blank"><img src="images/cart_list.jpg" width="220" height="220" alt="" /></a>
+                <p><a href="#" target="_blank">【Z1522】主推百搭简约版牛仔外套</a></p>
+                <dl class="ca_list_price">
+                	<dt>
+                    	<em>￥458.00</em>	
+                        <del>￥540.00</del>
+                    </dt>
+                    <dd>
+                        <a href="#" target="_blank"><i class="like"></i></a>
+                        <a href="#" target="_blank"><i class="car"></i></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+            	<a href="#" target="_blank"><img src="images/cart_list.jpg" width="220" height="220" alt="" /></a>
+                <p><a href="#" target="_blank">【Z1522】主推百搭简约版牛仔外套</a></p>
+                <dl class="ca_list_price">
+                	<dt>
+                    	<em>￥458.00</em>	
+                        <del>￥540.00</del>
+                    </dt>
+                    <dd>
+                        <a href="#" target="_blank"><i class="like"></i></a>
+                        <a href="#" target="_blank"><i class="car"></i></a>
+                    </dd>
+                </dl>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--new_footer-->
+<div class="new_footer clearfix">
+	
+    <div class="new_footer_intro new_body clearfix">
+    	<a href="#" target="_blank" class="new_footer_phone"><img src="images/new_footer_phone.png" width="176" height="94" alt="" /></a>
+        <ul>
+        	<li>
+            	<h3>公司简介</h3>
+                <a href="#" target="_blank"><i></i>关于我们</a>
+                <a href="#" target="_blank"><i></i>招聘信息</a>
+                <a href="#" target="_blank"><i></i>联系我们</a>
+            </li>
+            <li>
+            	<h3>新手上路</h3>
+                <a href="#" target="_blank"><i></i>用户注册流程</a>
+                <a href="#" target="_blank"><i></i>宝贝上架教程</a>
+                <a href="#" target="_blank"><i></i>购物支付流程</a>
+                <a href="#" target="_blank"><i></i>购物支付流程</a>
+            </li>
+            <li>
+            	<h3>代理商必读</h3>
+                <a href="#" target="_blank"><i></i>售价标准</a>
+                <a href="#" target="_blank"><i></i>代理商资格及规范</a>
+                <a href="#" target="_blank"><i></i>网店进货</a>
+                <a href="#" target="_blank"><i></i>实体店进货</a>
+            </li>
+            <li>
+            	<h3>服务保障</h3>
+                <a href="#" target="_blank"><i></i>正品保证</a>
+                <a href="#" target="_blank"><i></i>闪电发货</a>
+                <a href="#" target="_blank"><i></i>运费政策</a>
+                <a href="#" target="_blank"><i></i>售后服务</a>
+            </li>
+        </ul>
+        <a href="#" target="_blank" class="new_footer_police"><img src="images/new_footer_police.jpg" width="82" height="95" alt="" /></a>
+    </div>
+    
+    
+</div>
+<div class="LeftFloatNav">
+	<ul>
+		<li class="LeftFloatNav_index on" >
+			<a href="">牛牛<br>首页</a>
+		</li>
+		<li class="LeftFloatNav_day">
+			<a href="">
+				<i></i>
+				<em>每日必看</em>
+			</a>
+		</li>
+		<li class="LeftFloatNav_heat">
+			<a href="">
+				<i></i>
+				<em>爆款榜</em>
+			</a>
+		</li>
+		<li class="LeftFloatNav_new">
+			<a href="">
+				<i></i>
+				<em>上新单品</em>
+			</a>
+		</li>
+		<li class="LeftFloatNav_special">
+			<a href="">
+				<i></i>
+				<em>特价商品</em>
+			</a>
+		</li>
+	</ul>
+</div>
+<div class="interactive">
+	<span class="interactive_close"></span>
+	<ul>
+		<li class="interactive_contact">
+			<a href=""><span></span>联系我们</a>
+		</li>
+		<li class="interactive_agent">
+			<a href=""><span></span>代理流程</a>
+		</li>
+		<li class="interactive_suggest">
+			<a href=""><span></span>投拆建议</a>
+		</li>
+		<li class="interactive_qrcode">
+			<a href=""><span></span>二维码</a>
+            <div class="right_wx"><img src="images/right_nav_wx.png" width="152" height="159" alt="" /></div>
+		</li>
+		<li class="interactive_scrolltop">
+			<a style="cursor:pointer;"><span></span>回到顶部</a>
+		</li>
+	</ul>
+</div>
+
+<script>
+$(function(){
+	 RightNavWx();TopNavHover();RightNavClose();PageScroll();leftNavShow();AllChange();ChangeNum();DelParent();
+})
+/*wx_hide_show*/
+function RightNavWx(){
+	$(".interactive_qrcode").hover(function(){
+		$(this).find('.right_wx').show();	
+	},function(){
+		$(this).find('.right_wx').hide();	
+	});	
+};
+/*mai_bus*/
+function TopNavHover(){
+	$(".m_dh").hover(function(){
+		$(this).find("div[class='hd_cont']").show();
+		$(this).find("div[class='hd_nav']").addClass('on');	
+	},function(){
+		$(this).find("div[class='hd_cont']").hide();
+		$(this).find("div[class^='hd_nav']").removeClass('on');
+	});	
+};
+/*	close*/
+function RightNavClose(){	
+	$(".interactive_close").click(function(){
+		$(".interactive").hide();
+	});
+};
+/*	scroll*/
+function PageScroll(){		
+	$('.new_footer_gotop,.interactive_scrolltop').click(function(){
+		$('body,html').animate({scrollTop:0},500);
+	});		
+};
+
+/*leftNavShow*/
+function leftNavShow(){
+	$(window).scroll(function(){	
+		var leftNavTop=$("div[class*='lefNavShow']").offset().top;
+		var LeftFloatNav=$('.LeftFloatNav')
+		if(LeftFloatNav.offset().top>=leftNavTop-30){
+				LeftFloatNav.show();
+		}else{
+				LeftFloatNav.hide();
+		}
+	});
+};
+/*AllChange*/
+function AllChange(){
+	$(".ca_shop_list").find("[name='checkAll']:checkbox").click(function(){
+		if($(this).is(':checked')){
+			$("[name='checkbox']:checkbox").attr("checked",'true');
+		}else{
+			$("[name='checkbox']:checkbox").removeAttr("checked");
+		}
+	})
+};
+/*ChangeNum*/
+function ChangeNum(){
+	//购买商品数量增加
+	$(".cart_sum").children('.jia').click(function(){
+		$val=parseInt($(this).parent().children(".cart_math").val());
+		if(!isNaN($val)){
+			$(this).parent().children(".cart_math").val($val+1);
+		}
+	});
+	//购买商品数量减少
+	$(".cart_sum").children('.jian').click(function(){
+		$val=parseInt($(this).parent().children(".cart_math").val());
+		if ($val=="1") {
+			return false;
+		}else if(!isNaN($val)){
+			$(this).parent().children(".cart_math").val($val-1);
+		}
+	});
+};
+/*DelParent*/
+function DelParent(){
+	$('.cart_del').children('.delete').click(function(){
+		if(confirm("确定要删除这件物品吗？")){
+			$(this).parent().parent().parent().remove();
+   		 };		
+	})
+};
+
+</script>
+</body>
+</html>

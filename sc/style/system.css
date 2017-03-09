@@ -1,0 +1,171 @@
+﻿@charset "utf-8";
+/*
+说明：首页CSS样式
+时间：2016-02-03
+作者：weiJuwis
+ */
+*{padding: 0px; margin: 0px; font-size: 12px; font-family: "SimSun"; color: #696969;}
+ul,ol,li{list-style-type:none;}
+a,img{border:none; cursor:pointer;}
+a{text-decoration: none;}
+a:hover{color: #ff004e;}
+input{outline: none;border:0;border:none;}
+.clearfix:after{content:''; display:table; clear:both;}
+.clearfix{*zoom:1;}
+/*__用于全站宽度 并居中__*/
+.body{width: 1150px; margin:0px auto; display: table;}
+.new_body{width: 1210px; margin:0px auto; display: table;}
+
+/*header*/
+.header{ zoom:1; height:35px; line-height:35px; border-bottom: 1px solid #dddddd; background: #f7f6f6; color: #696969;}
+
+.head_tip{ background:url(../images/icon_niu.png) no-repeat -121px -559px; display:inline-block; width:9px; height:6px; position:absolute;}
+.header_info { height:35px; line-height:35px;}
+.header_info_left{float: left; padding-left:48px;}
+.header_info_right{float: right; font-size:0;}
+.header_info_right a{ display:inline-block; vertical-align:middle; padding-right:20px;}
+.header_info_right .header_read,.header_info_right .header_help{ display:inline-block; vertical-align:middle; position:relative;zoom:1;*display:inline; cursor:pointer;}
+
+.header_info_right .header_read{width:85px; margin-right:50px; zoom:1;}
+.header_info_right .header_help{width:82px;}
+.header_welcome{ width:72px;}
+
+.header_info_right .header_read .head_tip{ top:14px; left:69px;}
+.header_info_right .header_help .head_tip{ top:14px; left:55px;}
+.header_welcome,.header_message{position:relative; float:left;*display:inline; cursor:pointer;}
+
+.header_welcome .hd_cont,.header_message .hd_cont{width:70px;}
+.header_read .hd_cont{width:83px;}
+.header_help .hd_cont{ width:80px}
+.header_welcome .hd_nav,.header_message .hd_nav,.header_read .hd_nav,.header_help .hd_nav{ padding:0px 4px;border-left:1px solid #f7f6f6;border-right:1px solid #f7f6f6;}
+.header_welcome .hd_nav.on,.header_message .hd_nav.on,.header_read .hd_nav.on,.header_help .hd_nav.on{ background:#FFFFFF; border-left:1px solid #CCCCCC;border-right:1px solid #CCCCCC;}
+.header_welcome .hd_cont,.header_message .hd_cont,.header_read .hd_cont,.header_help .hd_cont{overflow:hidden; zoom:1; position:absolute; left:0;top:35px;border:1px solid #CCCCCC; border-top:none; background:#FFFFFF; display:none;}
+.header_welcome .hd_cont ul,.header_message .hd_cont ul,.header_read .hd_cont ul,.header_help .hd_cont ul{ padding-left:5px;}
+.header_welcome .hd_cont li,.header_message .hd_cont li,.header_read .hd_cont li,.header_help .hd_cont li{ text-align:left; line-height:24px;}
+.header_welcome .hd_cont li a,.header_message .hd_cont li a,.header_read .hd_cont li a,.header_help .hd_cont li a{  font-size:13px;}
+
+.header_message{ width:46px; margin-left:40px;}
+.header_welcome .head_tip{ top:14px; left:57px;}
+.header_message .head_tip{ top:14px; left:29px;}
+.header_like,.header_wap,.header_type{padding-left: 15px;}
+.header_like i,.header_wap i,.header_type i{background-image: url("../images/icon_niu.png"); width: 12px; height: 13px; display:inherit; position: absolute; margin-left: -20px; background-repeat: no-repeat;}
+.header_like i{background-position: -19px -17px; margin-top: 8px;*margin-top:0;}
+.header_wap i{background-position: -71px -19px; margin-top: 11px;*margin-top:0;}
+.header_type i{background-position: -121px -17px; margin-top: 9px;*margin-top:0;}
+
+.header_logo{padding:27px 0px 0px 35px;}
+.header_logo{ float: left;}
+
+/*header_search*/
+.header_search{width: 474px; float: left; padding:34px 0px 0px 181px;}
+.header_search form{background: url("../images/icon_niu.png") 0px -50px no-repeat; height: 43px;}
+.search{border:none; height: 18px; font-size: 13px; color: #a9a9a9;margin-left: 13px;margin-top: 12px; line-height: 18px;width:352px; float: left; margin-right: 13px;}
+.header_search_submit{border:none;background:none; display: block; float: left; width: 96px; height: 42px; cursor: pointer;}
+.search_heat{font-size: 13px; margin-top: 8px; color:#b7b7b7;}
+.search_heat a{font-size: 12px; padding:0px 10px; color:#b7b7b7;}
+.search_heat a:hover{ color:#ff004e;}
+.header_user_info{float: right; padding:7px 40px 0px 0px;} 
+.header_user_info a{color: #000; font-size: 14px; display: inline-block; margin-right: 53px;}
+
+.menu{background: #000; line-height: 40px;}
+.menu_left ul{margin-left: 70px; float: left;}
+.menu_left ul li{float: left; width: 127px;}
+.menu_left ul li.on,.menu_left ul li a:hover{background: #ff004e; height: 41px; position: relative; margin-top: -1px; line-height: 41px;}
+.menu_left ul li a{font-family: "Microsoft YaHei"; font-size: 16px; color: #fff; display: block; height: 40px; line-height: 40px; text-align: center;}
+.menu_shopping{width: 143px; height: 29px; float: right; background: #fff; margin-top: 5px; margin-right: 27px; line-height: 29px; text-align: center;}
+.menu_shopping a{color: #000; font-size: 13px;}
+
+/*header_nav*/
+.header_nav{ padding-top:16px;*padding-top:15px;}
+.header_nav .nav_allshop{ width:208px; background:#b42c36; text-align:center; vertical-align:middle; height:40px; line-height:40px; float:left; position:relative;}
+.header_nav .nav_allshop .icon_allshop{ background:url(../images/icon_niu.png) no-repeat -164px -559px; display:inline-block; width:13px; height:10px; font-size:0;}
+.header_nav .nav_allshop span{ display:inline-block; font-size:16px; color:#FFFFFF; font-family:"Microsoft YaHei"; padding-left:5px;}
+.header_nav .nav_allshop .allshop_show_btn{ display:block; font-size:0;}
+.header_nav .nav_allshop .allshop_list{ width:207px; height:600px; position:absolute; background:#ce535c; top:40px; left:1px; display:block;z-index:111;}
+.header_nav .nav_allshop .allshop_list li{ text-align:left; overflow:hidden; zoom:1;}
+.header_nav .nav_allshop .allshop_list li:hover{ background:#b42c36;}
+.header_nav .nav_allshop .allshop_list li:hover .all_shop_intro{border-bottom:1px solid #b42c36;}
+.header_nav .nav_allshop .allshop_list li .all_shop_intro{ width:183px; padding:10px 0px 17px 11px;border-bottom:1px solid #dd878d;  overflow:hidden;zoom:1;}
+.header_nav .nav_allshop .allshop_list li h3{font-size:14px; color:#ffffff;}
+.header_nav .nav_allshop .allshop_list li a{ padding-right:12px; float:left; font-size:12px; color:#ffffff; line-height:24px;}
+
+.header_nav .nav_menu{ float:left; width:800px; overflow:hidden; zoom:1; font-size:0;}
+.header_nav .nav_menu li{ display:inline-block; height:40px; line-height:40px;*display:inline;*zoom:1; }
+.header_nav .nav_menu li a{ font-size:16px; color:#000000; padding:0px 19px;font-family: "Microsoft YaHei";}
+.header_nav .nav_menu li a:hover{color:#b42c36;}
+
+/*footer*/
+.footer{}
+.footer_abuto{ overflow:hidden; zoom:1; border-top:2px solid #e5ecf0; padding-bottom:20px;}
+.footer_abuto ul{width:1150px; overflow:hidden; margin:0px auto;}
+.footer_abuto ul li{width: 20%; float: left; text-align: center;}
+.footer_abuto ul li h2{padding-top: 30px; padding-bottom: 8px;}
+.footer_abuto ul li a{display: block; height: 28px; line-height: 28px;}
+
+.footer_link{height: 42px; line-height: 42px; border-top:1px solid #c6c8ce; background: #e6e8eb; text-align: center;}
+.footer_link a{display: inline-block; margin-right: 8px;}
+
+.footer_bottom{background: #2d2d2d; text-align: center; color: #9d9d9d; line-height: 28px; padding-top: 24px; padding-bottom: 12px;}
+.footer_logo{padding-top: 10px;}
+.footer_logo a{width: 116px; height: 48px; display: block; background: url("../images/icon_niu.png") -250px -100px no-repeat; margin:auto;}
+
+/*new_footer*/
+.new_footer{ width:100%; padding-top:37px;}
+.new_footer .new_footer_top{ border-bottom:1px solid #c1c1c1; text-align:center; padding-bottom:3px; overflow:hidden; font-size:0;}
+.new_footer .new_footer_top a{ background:url(../images/icon_niu.png) no-repeat; cursor:pointer;*zoom:1;*display:inline;}
+.new_footer .new_footer_top span{ display:inline-block; vertical-align:middle; padding:0px 10px;}
+.new_footer .new_footer_top a.new_footer_home{ background-position:-381px -304px;width:40px; height:8px; display:inline-block; vertical-align:middle;*zoom:1;*display:inline;}
+.new_footer .new_footer_top a.new_footer_gotop{ background-position:-381px -329px; width:29px; height:8px; display:inline-block;vertical-align:middle;*zoom:1;*display:inline;}
+
+.new_footer .new_footer_intro{ padding:90px 0px 50px 30px;}
+.new_footer .new_footer_intro .new_footer_phone{ float:left; padding-right:92px;}
+.new_footer .new_footer_intro ul{ float:left; padding-right:80px; width:695px; overflow:hidden; zoom:1;}
+.new_footer .new_footer_intro ul li{width:133px; overflow:hidden; zoom:1;float:left; padding-right:40px;}
+.new_footer .new_footer_intro ul li h3{ border-bottom:1px solid #d4d4d4; font-size:14px; color:#454545; line-height:30px; padding-left:4px; margin-bottom:5px; zoom:1;}
+.new_footer .new_footer_intro ul li a{ display:block; line-height:22px; color:#454545;}
+.new_footer .new_footer_intro ul li a:hover{ color:#ff004e;}
+.new_footer .new_footer_intro ul li a i{width:3px; height:3px; background:#c65e65; display:inline-block; vertical-align:middle; margin-right:9px;}
+.new_footer .new_footer_intro .new_footer_police{ float:left;}
+.new_footer_dh{ width:100%; height:48px; background:#f5f5f5;}
+.new_footer_dh ul{ text-align:center; line-height:48px;}
+.new_footer_dh ul li{ display:inline-block; padding-left:30px;*zoom:1;*display:inline;}
+.new_footer_dh ul li a{ color:#424242; font-size:13px;}
+.new_footer_dh ul li a:hover{ color:#ff004e;}
+
+.new_footer_bottom{text-align: center; color: #9d9d9d; line-height: 28px; padding-top: 24px; padding-bottom: 12px;}
+.new_footer_logo{padding-top: 10px;}
+.new_footer_logo a{width: 93px; height: 37px; display: block; background: url("../images/new_footer_logo.png")no-repeat; margin:auto;}
+
+.interactive{position: fixed; width: 82px; height:354px; background: #cf545c; top: 50%; right: 0px; margin-top: -182px;}
+.interactive ul{position: absolute;}
+.interactive ul li{height:auto; border-bottom: 1px solid #fff; }
+.interactive ul li:hover{ background:#b52e38;}
+.interactive ul li a{height: 70px; display: block;width: 82px; color: #fff; font-size: 12px; text-align: center; line-height: 24px;overflow: hidden;}
+.interactive ul li span{display: block; background-image: url("../images/icon_niu.png"); background-repeat: no-repeat; margin: auto;}
+.interactive_close{width: 16px; height: 14px; display: block; position: absolute; margin-top: -18px; background: url("../images/icon_niu.png") no-repeat -217px -18px; margin-left: 64px; cursor: pointer;}
+.interactive ul li.interactive_contact span{width: 28px; height: 28px; background-position: -0px -100px; margin-top: 12px;}
+.interactive ul li.interactive_agent span{width: 28px; height: 28px; background-position: -50px -101px; margin-top: 12px;}
+.interactive ul li.interactive_suggest span{width: 22px; height: 28px; background-position: -100px -100px; margin-top: 12px;}
+.interactive ul li.interactive_qrcode{ position:relative;}
+.interactive ul li.interactive_qrcode span{width: 24px; height: 28px; background-position: -150px -100px; margin-top: 12px;}
+.interactive ul li.interactive_qrcode .right_wx{ position:absolute; right:82px; top:-33px; display:none;	}
+.interactive ul li.interactive_scrolltop span{width: 21px; height: 28px; background-position: -200px -100px; margin-top: 18px;}
+.interactive ul li.interactive_scrolltop a{line-height: 12px;}
+
+.LeftFloatNav{position: fixed; background: #fff4f8; top:50%; left:0px; margin-top: -153px; color: #6c6c6c; display:none;}
+.LeftFloatNav ul li{width: 74px; height: 60px; border-bottom: 1px #fff solid;}
+.LeftFloatNav ul li a{display: block;width: 74px; height: 60px; color: #6c6c6c; text-align: center;}
+.LeftFloatNav ul li em{font-style: normal; display: block; text-align: center;}
+.LeftFloatNav ul li.on a{color: #fff;}
+.LeftFloatNav ul li:hover a,.LeftFloatNav ul li.on{background: #cd1e2a; color: #fff;}
+.LeftFloatNav ul li:hover em{color: #fff;}
+.LeftFloatNav ul li.LeftFloatNav_index a{line-height: 20px;height: 49px; padding-top: 11px;}
+.LeftFloatNav ul li a i{display: block; background-image: url("../images/icon_niu.png"); background-repeat: no-repeat; margin: auto; padding-top: 10px; margin-bottom: 5px;}
+.LeftFloatNav ul li.LeftFloatNav_day i{width: 32px; height: 22px; background-position: -259px -5px;}
+.LeftFloatNav ul li.LeftFloatNav_day:hover i{background-position: -9px -155px;}
+.LeftFloatNav ul li.LeftFloatNav_heat i{width: 24px; height: 24px; background-position: -313px -5px;}
+.LeftFloatNav ul li.LeftFloatNav_heat:hover i{background-position: -63px -155px;}
+.LeftFloatNav ul li.LeftFloatNav_new i{width: 24px; height: 24px; background-position: -363px -5px;}
+.LeftFloatNav ul li.LeftFloatNav_new:hover i{background-position: -113px -155px;}
+.LeftFloatNav ul li.LeftFloatNav_special i{width: 24px; height: 24px; background-position: -413px -5px;}
+.LeftFloatNav ul li.LeftFloatNav_special:hover i{background-position: -163px -155px;}
